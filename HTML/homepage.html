@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="proj2-1.css">
+<style>
+body { margin 0;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+        background-color: #333;
+}
+
+ul li {
+	float: left;
+	width:25%;	
+        background-color: #333;
+      	}
+
+li a, .drpbtn{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .drpdown:hover .drpbtn {background-color:#4CAF50;}
+
+
+
+
+
+
+li.drpdown {
+  display: inline-block;
+}
+
+.drpdown-content {
+  display: none;
+  position: absolute;	;
+  
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left:60px;
+}
+
+.drpdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.drpdown-content a:hover {background-color:#f9f9f9;border-bottom:5px red solid;}
+.drpdown:hover .drpdown-content {
+  display: block;
+}
+
+body{
+background-image:url(' netflix blurred.jpeg');
+background-size:cover;
+background-attachment:fixed;
+}
+
+@media screen and (max-width: 800px) {
+   
+  ul li {float: none;
+	  width:100%;}
+ 
+}
+
+@media screen and (max-width: 800px) {
+   
+   .dropdown-content{
+	margin-left:250px;
+	}
+ 
+}
+
+</style>
+</head>
+<body>
+<div style="background-color:black;"><span style="margin-left:8%;"><img src="netflix logo.jpg" width="400px" height="100px" style="margin-left: -10px;"></span></div>
+
+<ul>
+  <li><a href="#home">HOME</a> </li>
+  <li>
+  <a href="about.html">ABOUT US</a></li>
+  
+  <li class="drpdown">
+    <a href="#" class="drpbtn">WISHLIST</a>
+    <div class="drpdown-content">
+      
+      <a href="#" style="display:none;" id="m1">STRANGER THINGS</a>
+      <a href="#" style="display:none;" id="m2">RIVERDALE</a>
+      <a href="#" style="display:none;" id="m3">IRON FIST</a>
+      <a href="#" style="display:none;" id="m4">HOUSE OF CARDS</a>
+      <a href="#" style="display:none;" id="m5">DAREDEVIL</a>
+      <a href="#" style="display:none;" id="m6">13 REASONS OF WHY</a>
+      <a href="#" style="display:none;" id="m7">STRANGER THINGS</a>
+      <a href="#" style="display:none;" id="m8">JESICA JONES</a>
+      <a href="#" style="display:none;" id="m9">NARCOS</a>
+    </div>
+  </li>
+  <li><a href="home.html"> LOG OUT</a> </li>
+</ul>
+<div style="margin-left:19%;margin-right:20%;margin-top:30px;margin-bottom:150px;background-color:white;height:1100px">
+<div class="dropdown" style="margin-left:10px;margin-top:10px">
+  <img src="1.jpeg"  width="250" height="350">
+  <div class="dropdown-content" style="margin-left:0px">
+  <img src="1.jpeg" width="300" height="400">
+  <div class="desc">STRANGER THINGS</div>
+  <div style="text-align:center" id="add1"><button type="button" class="desc1" onclick="func1()">ADD TO WISHLIST</button></div>
+  <div style="text-align:center;display:none" id="remove1"><button type="button" class="desc1" onclick="func11()">REMOVE FROM WISHLIST</button></div>
+
+  </div>
+</div>
+
+<div class="dropdown" style="margin-left:10px;margin-top:10px">
+  <img src="2.jpeg"  width="250" height="350">
+  <div class="dropdown-content" style="margin-left:0px">
+  <img src="2.jpeg"  width="300" height="400">
+  <div class="desc">RIVERDALE</div>
+  <div style="text-align:center" id="add2"><button type="button" class="desc1" onclick="func2()">ADD TO WISHLIST</button></div>
+  <div style="text-align:center;display:none" id="remove2"><button type="button" class="desc1" onclick="func22()">REMOVE FROM WISHLIST</button></div>
+  </div>
+</div>
+
+
+<div class="dropdown" style="margin-left:10px;margin-top:10px">
+  <img src="3.jpeg"  width="250" height="350">
+  <div class="dropdown-content" style="margin-left:0px">
+  <img src="3.jpeg"  width="300" height="400">
+  <div class="desc">IRON FIST</div>
+  <div style="text-align:center" id="add3"><button type="button" class="desc1" onclick="func3()">ADD TO WISHLIST</button></div>
+  <div style="text-align:center;display:none" id="remove3"><button type="button" class="desc1" onclick="func33()">REMOVE FROM WISHLIST</button></div>
+  </div>
+</div>
+
+<div class="dropdown" style="margin-left:10px;margin-top:10px">
+  <img src="4.jpeg"  width="250" height="350">
+  <div class="dropdown-content" style="margin-left:0px">
+  <img src="4.jpeg" width="300" height="400">
+  <div class="desc">HOUSE OF CARDS</div>
+  <div style="text-align:center" id="add4"><button type="button" class="desc1" onclick="func4()">ADD TO WISHLIST</button></div>
+  <div style="text-align:center;display:none" id="remove4"><button type="button" class="desc1" onclick="func44()">REMOVE FROM WISHLIST</button></div>
+
+  </div>
+</div>
+
+<div class="dropdown" style="margin-left:10px;margin-top:10px">
+  <img src="5.jpeg"  width="250" height="350">
+  <div class="dropdown-content" style="margin-left:0px">
+  <img src="5.jpeg"  width="300" height="400">
+  <div class="desc">DAREDEVIL</div>
+  <div style="text-align:center" id="add5"><button type="button" class="desc1" onclick="func5()">ADD TO WISHLIST</button></div>
+  <div style="text-align:center;display:none" id="remove5"><button type="button" class="desc1" onclick="func55()">REMOVE FROM WISHLIST</button></div>
+  </div>
+</div>
+
+
+<div class="dropdown" style="margin-left:10px;margin-top:10px">
+  <img src="6.jpeg"  width="250" height="350">
+  <div class="dropdown-content" style="margin-left:0px">
+  <img src="6.jpeg"  width="300" height="400">
+  <div class="desc">13 REASONS WHY</div>
+  <div style="text-align:center" id="add6"><button type="button" class="desc1" onclick="func6()">ADD TO WISHLIST</button></div>
+  <div style="text-align:center;display:none" id="remove6"><button type="button" class="desc1" onclick="func66()">REMOVE FROM WISHLIST</button></div>
+  </div>
+</div>
+
+<div class="dropdown" style="margin-left:10px;margin-top:10px">
+  <img src="7.jpeg"  width="250" height="350">
+  <div class="dropdown-content" style="margin-left:0px">
+  <img src="7.jpeg" width="300" height="400">
+  <div class="desc">STRANGER THINGS</div>
+  <div style="text-align:center" id="add7"><button type="button" class="desc1" onclick="func7()">ADD TO WISHLIST</button></div>
+  <div style="text-align:center;display:none" id="remove7"><button type="button" class="desc1" onclick="func77()">REMOVE FROM WISHLIST</button></div>
+
+  </div>
+</div>
+
+<div class="dropdown" style="margin-left:10px;margin-top:10px">
+  <img src="8.jpeg"  width="250" height="350">
+  <div class="dropdown-content" style="margin-left:0px">
+  <img src="8.jpeg"  width="300" height="400">
+  <div class="desc">JESICA JONES</div>
+  <div style="text-align:center" id="add8"><button type="button" class="desc1" onclick="func8()">ADD TO WISHLIST</button></div>
+  <div style="text-align:center;display:none" id="remove8"><button type="button" class="desc1" onclick="func88()">REMOVE FROM WISHLIST</button></div>
+  </div>
+</div>
+
+
+<div class="dropdown" style="margin-left:10px;margin-top:10px">
+  <img src="9.jpeg"  width="250" height="350">
+  <div class="dropdown-content" style="margin-left:0px">
+  <img src="9.jpeg"  width="300" height="400">
+  <div class="desc">NARCOS</div>
+  <div style="text-align:center" id="add9"><button type="button" class="desc1" onclick="func9()">ADD TO WISHLIST</button></div>
+  <div style="text-align:center;display:none" id="remove9"><button type="button" class="desc1" onclick="func99()">REMOVE FROM WISHLIST</button></div>
+  </div>
+</div>
+
+
+</div>
+
+<div style="min-height:40px;width:100%;position:relative;margin: 0;background-color:red"> <a href="about.html" style="color: white;font-size: 20px;; text-decoration: none;">about us</a> </div>
+<script>
+	function func1(){
+		document.getElementById("m1").style.display="block";
+		document.getElementById("add1").style.display="none";
+		document.getElementById("remove1").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func11(){
+		document.getElementById("m1").style.display="none";
+		document.getElementById("add1").style.display="block";
+		document.getElementById("remove1").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func2(){
+		document.getElementById("m2").style.display="block";
+		document.getElementById("add2").style.display="none";
+		document.getElementById("remove2").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func22(){
+		document.getElementById("m2").style.display="none";
+		document.getElementById("add2").style.display="block";
+		document.getElementById("remove2").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func3(){
+		document.getElementById("m3").style.display="block";
+		document.getElementById("add3").style.display="none";
+		document.getElementById("remove3").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func33(){
+		document.getElementById("m3").style.display="none";
+		document.getElementById("add3").style.display="block";
+		document.getElementById("remove3").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func4(){
+		document.getElementById("m4").style.display="block";
+		document.getElementById("add4").style.display="none";
+		document.getElementById("remove4").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func44(){
+		document.getElementById("m4").style.display="none";
+		document.getElementById("add4").style.display="block";
+		document.getElementById("remove4").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func5(){
+		document.getElementById("m5").style.display="block";
+		document.getElementById("add5").style.display="none";
+		document.getElementById("remove5").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func55(){
+		document.getElementById("m5").style.display="none";
+		document.getElementById("add5").style.display="block";
+		document.getElementById("remove5").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func6(){
+		document.getElementById("m6").style.display="block";
+		document.getElementById("add6").style.display="none";
+		document.getElementById("remove6").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func66(){
+		document.getElementById("m6").style.display="none";
+		document.getElementById("add6").style.display="block";
+		document.getElementById("remove6").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func7(){
+		document.getElementById("m7").style.display="block";
+		document.getElementById("add7").style.display="none";
+		document.getElementById("remove7").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func77(){
+		document.getElementById("m7").style.display="none";
+		document.getElementById("add7").style.display="block";
+		document.getElementById("remove7").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func8(){
+		document.getElementById("m8").style.display="block";
+		document.getElementById("add8").style.display="none";
+		document.getElementById("remove8").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func88(){
+		document.getElementById("m8").style.display="none";
+		document.getElementById("add8").style.display="block";
+		document.getElementById("remove8").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func9(){
+		document.getElementById("m9").style.display="block";
+		document.getElementById("add9").style.display="none";
+		document.getElementById("remove9").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func99(){
+		document.getElementById("m9").style.display="none";
+		document.getElementById("add9").style.display="block";
+		document.getElementById("remove9").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+</script>
+</body>
+</html>
+

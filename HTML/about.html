@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="proj2-1.css">
+<style>
+body { margin 0;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+        background-color: #333;
+}
+
+ul li {
+	float: left;
+	width:25%;	
+        background-color: #333;
+      	}
+
+li a, .drpbtn{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .drpdown:hover .drpbtn {background-color:#4CAF50;}
+
+
+
+
+
+
+li.drpdown {
+  display: inline-block;
+}
+
+.drpdown-content {
+  display: none;
+  position: fixed	;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left:60px;
+}
+
+.drpdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.drpdown-content a:hover {background-color:#f9f9f9;border-bottom:5px red solid;}
+.drpdown:hover .drpdown-content {
+  display: block;
+}
+
+body{
+background-image:url(' netflix blurred.jpeg');
+background-size:cover;
+background-attachment:fixed;
+}
+
+@media screen and (max-width: 800px) {
+   
+  ul li {float: none;
+	  width:100%;}
+ 
+}
+
+@media screen and (max-width: 800px) {
+   
+   .dropdown-content{
+	margin-left:250px;
+	
+	}
+ 
+}
+
+</style>
+</head>
+<body>
+<div style="background-color:#555;"><span style="margin-left:8%;"><img src="netflix logo.jpg" width="400px" height="100px" style="margin-left: -10px;"></span></div>
+
+<ul>
+  <li><a href="homepage.html">HOME</a> </li>
+  <li>
+  <a href="about.html">ABOUT US</a></li>
+  
+  <!--li class="drpdown">
+    <a href="#" class="drpbtn">WISHLIST</a> </li>
+    <div class="drpdown-content">
+
+</div-->
+</ul>
+ <p > <pre style="color: red;background-color: black; font-size: 50px; font-family: serif;" > Netflix, Inc.
+  is an American media-services provider 
+  headquartered in Los Gatos, 
+  California,
+  founded in 1997 
+  by Reed Hastings and Marc Randolph in Scotts Valley,
+  California. </pre>
+  </p><p><pre style="color: red;background-color: black; font-size: 30px; font-family: serif;">
+ Founded: 29 August 1997,<br>
+ Scotts Valley, California, United States<br>
+Revenue: 1,579.4 crores USD (2018)
+Stock price: NFLX (NASDAQ) US$ 366.96 +10.40 (+2.92%)
+  </pre>
+  
+<div style="min-height:40px;width:100%;position: absolute;margin-top: 100px;;background-color:red;" >
+ <a href="homepage.html" style="color: white;font-size: 20px; text-decoration: none;">GO TO HOME..</a> </div>
+
+<script>
+	function func1(){
+		document.getElementById("m1").style.display="block";
+		document.getElementById("add1").style.display="none";
+		document.getElementById("remove1").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func11(){
+		document.getElementById("m1").style.display="none";
+		document.getElementById("add1").style.display="block";
+		document.getElementById("remove1").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func2(){
+		document.getElementById("m2").style.display="block";
+		document.getElementById("add2").style.display="none";
+		document.getElementById("remove2").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func22(){
+		document.getElementById("m2").style.display="none";
+		document.getElementById("add2").style.display="block";
+		document.getElementById("remove2").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func3(){
+		document.getElementById("m3").style.display="block";
+		document.getElementById("add3").style.display="none";
+		document.getElementById("remove3").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func33(){
+		document.getElementById("m3").style.display="none";
+		document.getElementById("add3").style.display="block";
+		document.getElementById("remove3").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func4(){
+		document.getElementById("m4").style.display="block";
+		document.getElementById("add4").style.display="none";
+		document.getElementById("remove4").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func44(){
+		document.getElementById("m4").style.display="none";
+		document.getElementById("add4").style.display="block";
+		document.getElementById("remove4").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func5(){
+		document.getElementById("m5").style.display="block";
+		document.getElementById("add5").style.display="none";
+		document.getElementById("remove5").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func55(){
+		document.getElementById("m5").style.display="none";
+		document.getElementById("add5").style.display="block";
+		document.getElementById("remove5").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func6(){
+		document.getElementById("m6").style.display="block";
+		document.getElementById("add6").style.display="none";
+		document.getElementById("remove6").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func66(){
+		document.getElementById("m6").style.display="none";
+		document.getElementById("add6").style.display="block";
+		document.getElementById("remove6").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func7(){
+		document.getElementById("m7").style.display="block";
+		document.getElementById("add7").style.display="none";
+		document.getElementById("remove7").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func77(){
+		document.getElementById("m7").style.display="none";
+		document.getElementById("add7").style.display="block";
+		document.getElementById("remove7").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func8(){
+		document.getElementById("m8").style.display="block";
+		document.getElementById("add8").style.display="none";
+		document.getElementById("remove8").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func88(){
+		document.getElementById("m8").style.display="none";
+		document.getElementById("add8").style.display="block";
+		document.getElementById("remove8").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+	function func9(){
+		document.getElementById("m9").style.display="block";
+		document.getElementById("add9").style.display="none";
+		document.getElementById("remove9").style.display="block";
+		alert("ADDED TO WISHLIST");
+		
+	}
+
+	function func99(){
+		document.getElementById("m9").style.display="none";
+		document.getElementById("add9").style.display="block";
+		document.getElementById("remove9").style.display="none";
+		alert("REMOVED FROM WISHLIST");
+		
+	}
+</script>
+</body>
+</html>
+

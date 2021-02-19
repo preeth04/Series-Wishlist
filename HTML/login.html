@@ -1,0 +1,27 @@
+<html>
+<head>
+<link rel="stylesheet" href="loginstyle.css">
+</head>
+<body class="bg">
+<form action="login.php" method="post">
+
+  <div class="section">
+    <label for="uname"  ><b >  Username     </b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="pswd" ><b>  Password       </b></label>
+    <input type="password" placeholder="Enter Password" name="pswd" required>
+
+    <button type="submit"><b>Login</b></button>
+    
+  </div>
+  <div class="section" style="margin: 37px; border-radius: 4px;">
+    <button type="button" class="cancelbtn" onclick="location.href='home.html'">Cancel</button>
+    <span class="pswd">Forgot <a href="signup.html">password?</a></span>
+ 	<h2> New Account? </h2>
+ 	<button type="button" class="signup" onclick="location.href='signup.html'"> Sign Up </button>
+  </div>
+</form>
+
+</body>
+</html>

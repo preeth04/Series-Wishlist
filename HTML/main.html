@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link type="text/css" rel="stylesheet" href="mainstyle.css">
+</head>
+
+<script>
+function func1(){
+	document.getElementById("link1").style.display="block";
+	document.getElementById("link2").style.display="none";
+	document.getElementById("link3").style.display="none";
+
+	document.getElementById("li1").style.background="tomato";
+	document.getElementById("li2").style.background="#333";
+	document.getElementById("li3").style.background="#333";
+
+}
+function func2(){
+	document.getElementById("link2").style.display="block";
+	document.getElementById("link1").style.display="none";
+	document.getElementById("link3").style.display="none";
+
+	document.getElementById("li2").style.background="tomato";
+	document.getElementById("li1").style.background="#333";
+	document.getElementById("li3").style.background="#333";
+
+}
+function func3(){
+	document.getElementById("link3").style.display="block";
+	document.getElementById("link1").style.display="none";
+	document.getElementById("link2").style.display="none";
+
+	document.getElementById("li3").style.background="tomato";
+	document.getElementById("li1").style.background="#333";
+	document.getElementById("li2").style.background="#333";
+
+}
+</script>
+
+<body> 
+<form>
+
+<div class="one">
+
+<ul class="topnav">
+<img src="netflix logo.jpg" class="logo">
+<li><a href="#">LINK1</a></li>
+<li><a href="#">LINK2</a></li>
+<li><a href="#">LINK3</a></li>
+
+</ul>
+</div>
+
+
+
+
+<ul class="sidenav">
+
+<li id="li1" style="background-color:#333"><a href="#" onclick="func1()" >LINK1</a></li>
+<li id="li2" style="background-color:#333"><a href="#" onclick="func2()" >LINK2</a></li>
+<li id="li3" style="background-color:#333"><a href="#" onclick="func3()" >LINK3</a></li>
+</ul>
+
+
+<div class="content">
+	
+	<div id="link1" style="display:none;">
+ 		<h1>LINK1</h1>
+		<p style="font-variant:small-caps;color:white;">contents of link 1</p>
+	</div>
+	<div id="link2" style="display:none;" >
+		<h1>LINK2</h1>
+		<p style="font-variant:small-caps ;color:white; ">contents of link 2</p>
+	</div>
+	<div id="link3" style="display:none;" >
+		<h1>LINK3</h1>
+		<p style="font-variant:small-caps;color:white;">contents of link 3</p>
+	</div>	
+</div>
+
+
+
+</form>		
+</body>
+</html>

@@ -1,0 +1,13 @@
+.footer {
+  position: relative;
+  left: -10px;
+  height: 27%;
+  bottom: -0%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.87;
+  color: white;
+  text-align: center;
+}  
+
+<div class="footer"> footer</div>

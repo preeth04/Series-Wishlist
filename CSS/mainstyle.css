@@ -1,0 +1,79 @@
+.logo{
+	
+height: 100px;
+width: 300px;
+}
+div.one{
+  height:70px;
+  margin:0;
+  padding:0;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;	
+  background-color: #555;
+  position:fixed;
+  width:100%;		
+	
+  
+}
+
+ul.topnav li {
+	      float: left;
+	      width:25%;
+  			background-color: #333;
+			margin-top: 0;
+	      height:50px;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  	height:50px;
+}
+
+li a:hover{
+  background-color:#4CAF50
+}	
+
+ul.sidenav {
+  display:block;
+  list-style-type: none;
+  margin-top: 80px;
+  padding: 0;
+  width: 25%;
+  background-color: #555;
+  position:fixed;
+  height: 1000px;
+  overflow: auto;
+  
+}
+
+ul.sidenav li a {
+  display: block;
+  color: white;
+  text-align:center;	
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+ 
+body{
+  margin: 0;
+  padding:0;
+  background-image: url("netflix-image-blurred.jpg");
+  position: fixed;
+}
+div.content{
+  float: left;
+  margin-left: 1195%;
+  padding: 1px 16px;
+  height: 1000px;
+  background-color:rgba(128,128,128,0.2);
+   
+}

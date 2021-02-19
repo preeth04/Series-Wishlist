@@ -1,0 +1,113 @@
+.bg { 
+  /* The image used */
+  background-image: url("netflix login image.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+form {
+  border: 1px solid #f1f1f1 ;
+  margin: 180px 400px	 0  400px;
+  height: 500px;
+  padding: 40px;
+  border-radius: 3px;
+}
+label{
+font-size: 28px;
+margin-top: 10px;
+margin-left: 10px;
+
+background-color: black;opacity: 0.89;
+border-radius: 4px;
+color: #AE0000;
+}
+input[type=text]{
+  width:39%; 
+  padding: 12px 20px;
+  margin: -25px 7px -10px 200px;
+  display: inline block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ border-radius: 10px;
+}
+input[type=email] {
+
+  width:39%; 
+  padding: 12px 20px;
+  margin: 40px 7px -10px 73px;
+  display: inline block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ border-radius: 10px;
+
+}
+ input[type=password] {
+  width:39%;
+  padding: 12px 20px;
+  margin:50px 7px -10px 68px;
+  display:inline block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ border-radius: 10px
+}
+
+ input[type=number] {
+  width:39%;
+  padding: 12px 20px;
+  margin:45px 7px -10px 70px;
+  display:inline block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ border-radius: 10px
+}
+
+button {
+  background-color: #AE0000;
+  color: black;
+  padding: 10px 18px;
+  margin: 45px 15px 0 40px;
+  border: none;
+  cursor: pointer;
+  width: 75%;
+  font-size: 19px;
+  font-family: serif;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:black;;
+  color: #AE0000;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+	margin: 10px 1px 1px  25%; 
+  width: 35%;
+  padding: 10px 18px;
+  background-color: #AE0000;
+}
+
+h1{
+color: red;
+background-color: black;
+width: 50%;
+text-align: center;
+margin-left: 95px;
+margin-top: 5px;
+}
+
+
+
+
+
+
+
+
